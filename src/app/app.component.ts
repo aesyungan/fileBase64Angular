@@ -26,7 +26,7 @@ export class AppComponent {
     var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = ()=> {
-      console.log(reader.result);//imagen buarda string
+      console.log(reader.result);//imagen como string en base 64 esto se guardaria en la base
       this.imageData=reader.result;
     };
     reader.onerror =  (error)=> {
