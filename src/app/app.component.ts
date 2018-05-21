@@ -21,8 +21,6 @@ export class AppComponent {
   file: File;
   constructor(private sanitizer: DomSanitizer) { }
   public ngOnInit() {
-    
-this.getBase64(this.imgbase64);
   }
   getBase64(file) {
     var reader = new FileReader();
