@@ -28,7 +28,7 @@ this.getBase64(this.imgbase64);
     var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = ()=> {
-      console.log(reader.result);
+      console.log(reader.result);//imagen buarda string
       this.imageData=reader.result;
     };
     reader.onerror =  (error)=> {
